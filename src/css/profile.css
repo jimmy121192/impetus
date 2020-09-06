@@ -1,0 +1,51 @@
+
+
+#user-avatar{
+    width: 200px;
+    height: auto;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+.form-inputs:focus, .form-inputs{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-color: transparent;
+    box-shadow: none;
+    outline: none;
+ 
+  }
+
+.sport-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap
+   
+}
+.sport-items h1 span{
+ margin-right: 5px;
+}
+.buttons-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#info-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.user-stats{
+    
+    /* width: 250px; */
+    border:none
+}

@@ -1,0 +1,112 @@
+
+@font-face {
+    font-family: futura;
+    src: url(./fonts/FuturaRound.ttf);
+}
+@font-face {
+    font-family: brandon;
+    src: url(./fonts/Brandon_reg.otf);
+}
+@font-face {
+  font-family: script;
+  src: url(./fonts/script.ttf);
+}
+@font-face {
+  font-family: neutra;
+  src: url(./fonts/Neutra.ttf);
+}
+@font-face {
+  font-family: title;
+  src: url(./fonts/UTM\ Tam\ Le.ttf);
+}
+body{
+    overflow-x: hidden;
+    font-family: futura
+}
+#particles-js {
+  width: 100%;
+  height: 100vh;
+}
+
+#impetus{
+
+  text-align: center;
+  width: 400px;
+  /* border-bottom: 1px solid white; */
+  position: absolute;
+  z-index: 100;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top:20vh;
+  pointer-events: none
+ 
+  /* -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+  animation: neon 1.5s ease-in-out infinite alternate; */
+
+
+}
+#login-form{
+  width: 350px;
+  height: 260px;
+  background-color: rgb(247, 247, 247);
+  position: absolute;
+  z-index: 100;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top:42vh;
+  font-family: futura;
+  border-radius: 2px;
+  text-align: center;
+  padding:15px;
+
+
+}
+p, label{
+  font-family: futura;
+  font-size: 12pt;
+  color: #12355B;
+
+}
+#register-form{
+  width: 350px;
+  height: 450px;
+  background-color: rgb(247, 247, 247);
+  position: absolute;
+  z-index: 100;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top:42vh;
+  border-radius: 2px;
+  text-align: center;
+  padding:15px;
+
+}
+
+
+h1{
+  font-size: 16pt;
+}
+label {
+  font-size: 11pt;
+}
+.signin{
+  display:flex; 
+  align-items:center; 
+  justify-content: space-between;
+  margin-bottom:30px;
+}
+
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between
+}
+.f-items{
+ width: 49%;
+}
+

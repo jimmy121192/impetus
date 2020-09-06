@@ -1,0 +1,189 @@
+.sidebar{
+    background-image:  url(../img/background.png);
+    background-size: cover;
+
+    height:calc(100vh - 70px);
+    width: 200px;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+
+.corner{
+    background-color:  #17a2b8;
+    height: 70px;
+    width: 200px;
+    position: fixed;
+    top:0;
+    left:0;
+    text-align: center;
+    padding: 7px;
+}
+.menu{
+    color: #83091d;
+    font-size: 24pt;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none
+}
+.topbar{
+    background-color:  #FAFAFA;
+    height:70px;
+    width: calc(100% - 200px);
+    position: fixed;
+    top:0;
+    right:0;
+    box-shadow: 0 2px 1px -2px rgba(0, 0, 0, 0.16), 0 2px 1px -2px rgba(0,0,0,0.23);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+}
+#ddown{
+    margin-left: 10px;
+    border-radius: 5px;
+
+}
+
+.profile{
+    height: 70px;
+    display: flex;
+    position: fixed;
+    right:0;
+    width:400px;
+    justify-content: space-evenly; 
+    align-items: center;
+    flex-direction: row;
+    padding-left: 1em;
+ 
+}
+#avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 50px;
+}
+#user{
+    width: 220px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+
+}
+.dashboard{
+    width: calc(100% - 200px);
+    height:calc(100vh - 70px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    padding: 5em;
+
+}
+
+@media (max-width: 880px) {
+    .icons{
+        font-size: 8pt;
+    }
+    .corner, .sidebar{
+        transition: 0.5s;
+        left: -200px;
+    }
+    .menu{
+        display: block
+    }
+    #title{
+        display: none
+      }
+    .dashboard,.topbar{
+        width: 100%;
+    }
+    .Lists-container{
+        width: 100px !important;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        padding:0 !important;
+        background-color: #FAFAFA;
+       
+    }
+    .friendBox{
+        width:80px !important; 
+        height:80px !important; 
+  
+        background-color: transparent !important;
+     
+      }
+    .big-box{
+        display: none !important
+    }
+    .small-box{
+        display: flex !important;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+         width: 100px;
+         height: 90px;
+    }
+    
+    .Chat-container{
+        width: calc(100% - 100px) !important;
+        left: 100px !important;
+
+    }
+
+    #control{
+        width: calc(100% - 150px)!important;
+        padding: 1em;
+      } 
+
+}
+
+@media (max-width: 660px) {
+    .icons{
+        font-size: 6pt;
+    }
+    .profile{
+        width:300px; 
+     
+    }
+    
+    .dashboard{
+        
+        padding: 0.25em;
+
+    }
+    .event-thumb{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .location{
+        font-size: 8pt;
+    }
+
+}
+.bars{
+    height: 60px;
+    font-size: 10pt;
+    background-color: initial;
+    color: #FAFAFA;
+    /* border: 0.5px solid #FAFAFA; */
+    cursor: pointer;
+
+}
+.bars:hover{
+    transition: 0.5s;
+    background-color: #499fb55b;
+}
+
+.selected{
+    background-color: #499fb55b !important; 
+    border-color: #499fb55b !important; 
+}
+
+.ddown{
+    height: 35px;
+    line-height: 35px;
+}

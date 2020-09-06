@@ -1,0 +1,91 @@
+
+.feed-buttons{
+    width: 150px;
+    height: 40px;
+    margin:15px 0;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #17a2b8;
+    color:white;
+    border: none ;
+    border-radius: 0 !important
+}
+.feed-buttons span{
+    font-size: 14pt;
+}
+.feed-buttons:hover{
+    background-color: #12355B;
+}
+
+.feed-menu{
+    padding:1em; 
+    flex-wrap:wrap; 
+    flex-direction: row
+}
+
+.feed-boxes{
+  margin: 2em 0;
+  padding: 0.5em;
+  background-color: #FAFAFA;
+}
+
+  .event-thumb{
+    width: 80px;
+  
+    height:80px;
+  
+  }
+  .feed-container{
+  margin: 3em 0;
+
+  }
+  
+.num-blocks{
+  width: 80px;
+  border: 1px solid #17a2b8;
+  padding:1em;
+  margin:0.5em;
+}
+
+  .rightPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  div.col {
+    text-align: initial;
+    margin: 0.3em;
+  }
+  
+
+  
+  p {
+    font-size: 1.5em;
+    color: #12355B;
+  }
+  
+  span.numPeople {
+    font-size: 1.1em;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  span.time {
+    font-size: 2.2em;
+  }
+  
+  .faIcons {
+    font-size: 2em;
+  }
+  
+  span.location {
+    margin: 1em;
+  }
+  
+  .top-questions{
+    margin-bottom: 50px;
+
+  
+  }

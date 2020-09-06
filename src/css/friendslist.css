@@ -1,0 +1,62 @@
+.Lists-container{
+    width: 350px;
+    height:calc(100vh);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    padding: 2em;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+}
+
+.container-fluid {
+    margin: 0;
+  }
+  
+  div.friendBox {
+    margin: 1em;
+  }
+  
+  div.col {
+    text-align: initial;
+    margin: 0.1em;
+    padding: 0;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: 0.6em;
+    margin-bottom: 0.3em;
+  }
+  
+  .faIcons {
+    font-size: 1em;
+  }
+  
+  span.location {
+    margin: 0.4em;
+  }
+  .friendBox{
+    align-items: center;
+    width:300px ;
+    height:90px;
+    background-color: #FAFAFA;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    cursor: pointer;
+  }
+  
+  .avatars{
+    width: 80px;
+    border-radius: 40px;
+    height:80px;
+    padding: 2px;
+    border: 1px solid #49a0b5;
+  }
+  .small-box{
+    display: none;
+   
+  }

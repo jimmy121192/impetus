@@ -1,0 +1,28 @@
+.sports{
+    width: 150px;
+    height: 40px;
+    margin:15px;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #17a2b8;
+    color:white;
+    border: none ;
+    border-radius: 0 !important
+}
+.sports span{
+    font-size: 14pt;
+}
+.sports:hover{
+    background-color: #12355B;
+}
+
+.highlight{
+    background-color: #12355B !important; 
+    border-color: #12355B !important; 
+}
+
+.sport-boxes{
+    padding:0; 
+    flex-wrap:wrap; 
+    flex-direction: row
+}

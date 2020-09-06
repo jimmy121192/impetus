@@ -1,0 +1,60 @@
+.dashboard {
+  background-color: #fff;
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: none;
+}
+
+h1 {
+  text-align: start;
+}
+
+h1:hover {
+  cursor: text;
+}
+
+.block-info {
+  background-color: #fff;
+  padding: 1.5em;
+  margin: 1em 0;
+
+}
+
+.chart-info {
+  background-color: #fff;
+  padding: 1em;
+  margin: 1em 0;
+
+}
+
+
+.hightlight{
+  width: 250px;
+  height: 100px;
+  margin: 1em 0;
+  color: #FFF;
+
+  
+}
+.hl1{
+  background-color: #12355B;
+
+}
+
+.hl2{
+  background-color: rgb(5, 92, 26);
+}
+
+.hl3{
+  background-color: rgb(124, 20, 2);
+}
+
+.hl4{
+  background-color: rgb(107, 105, 4);
+}
+
+ol {
+  text-align: start;
+}

@@ -1,0 +1,85 @@
+.eventBox {
+  background-color: #FAFAFA;
+  padding: 1em; 
+  border-radius: 0.5em;
+  color: #12355B;
+  box-shadow: none;
+  margin: 3em 0 ; 
+}
+.event-thumb{
+  width: 80px;
+
+  height:80px;
+
+}
+.event-container{
+margin: 3em 0; 
+}
+
+.rightPanel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+div.col {
+  text-align: initial;
+  margin: 0.3em;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.5em;
+  color: #12355B;
+}
+
+span.numPeople {
+  font-size: 1.1em;
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+.faIcons {
+  font-size: 2em;
+}
+
+
+
+.leader-board{
+  margin-top: 50px;
+
+
+}
+
+.leaders{
+  margin: 10px 0;
+  font-size: 11pt;
+}
+
+.join-buttons{
+  width: 100px;
+  height: 30px;
+
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #17a2b8;
+  color:white;
+  border: none ;
+  border-radius: 0 !important
+}
+.join-buttons span{
+  font-size: 12pt;
+}
+
+.going{
+  background-color: #e5174d;
+  pointer-events: "none";
+  user-select: "none";
+}
