@@ -166,6 +166,11 @@
         this.annoucement = data[3][0]['text'];
         this.teamLeaderBoard = data[4];
 
+        this.isRegistered.map((reg, index) => {
+            this.registeredEvent(reg.event_id, reg.status)
+            console.log(reg.event_id, reg.status)
+        })
+
         } catch(error) {
             console.log("error", error);
             // appropriately handle the error
