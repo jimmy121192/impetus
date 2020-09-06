@@ -209,7 +209,7 @@
 
       },
       fetchData() {
-        axios.get('http://impetus.localhost/src/php/ajaxProfile.php', {
+        axios.get('https://impetus-php.herokuapp.com/ajaxProfile.php', {
             withCredentials: true
           })
           .then((response) => {
@@ -224,7 +224,7 @@
 
       decline(param) {
 
-        axios.get('http://impetus.localhost/src/php/declineEvent.php?event_id=' + param, {
+        axios.get('https://impetus-php.herokuapp.com/declineEvent.php?event_id=' + param, {
           withCredentials: true
         }).then((resp) => {
           console.log(resp)
@@ -234,7 +234,7 @@
 
       },
       handleReq(id, user, team, player_rank, player_score) {
-        axios.post('http://impetus.localhost/src/php/handleRequest.php', {
+        axios.post('https://impetus-php.herokuapp.com/handleRequest.php', {
           user_id: id,
           username: user,
           teamname: team,
@@ -247,7 +247,7 @@
 
       },
       accept() {
-        axios.post('http://impetus.localhost/src/php/editProfile.php', {
+        axios.post('https://impetus-php.herokuapp.com/editProfile.php', {
           sports: JSON.stringify(this.sports),
           description: this.body,
           avatar: this.avatarUrl,

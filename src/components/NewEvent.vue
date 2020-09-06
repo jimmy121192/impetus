@@ -86,7 +86,7 @@ export default {
     }
   },
   mounted(){
-      axios.get('http://impetus.localhost/src/php/getEventsParticipants.php', {
+      axios.get('https://impetus-php.herokuapp.com/getEventsParticipants.php', {
           withCredentials: true
         })
         .then((response) => {
@@ -122,7 +122,7 @@ export default {
       // var imagefile = document.querySelector('#file');
       // formData.append("image", imagefile.files[0]);
       
-    axios.post('http://impetus.localhost/src/php/createEvent.php', {
+    axios.post('https://impetus-php.herokuapp.com/createEvent.php', {
                 event: this.form,
                 // image:formData,
                 // headers: {

@@ -91,7 +91,7 @@
       this.name = item.username;
       this.avatar = item.avatar;
 
-      axios.get('http://impetus.localhost/src/php/getStats.php',{
+      axios.get('https://impetus-php.herokuapp.com/getStats.php',{
           withCredentials: true
         }).then((resp) => {
           console.log(resp)

@@ -57,7 +57,7 @@ export default {
     }
   },
   mounted() {
-      axios.get('http://impetus.localhost/src/php/getMods.php', {
+      axios.get('https://impetus-php.herokuapp.com/getMods.php', {
           withCredentials: true
         })
         .then((response) => {
@@ -76,14 +76,14 @@ export default {
     },
     methods: {
         addMod(){
-            axios.get('http://impetus.localhost/src/php/addMod.php?id='+this.add_id, {
+            axios.get('https://impetus-php.herokuapp.com/addMod.php?id='+this.add_id, {
              withCredentials: true
             }).then((response) => {
                 this.modalShow = !this.modalShow
             })
         },
         delMod(){
-            axios.get('http://impetus.localhost/src/php/delMod.php?id='+this.del_id, {
+            axios.get('https://impetus-php.herokuapp.com/delMod.php?id='+this.del_id, {
              withCredentials: true
             }).then((response) => {
                 this.modalShow2 = !this.modalShow2

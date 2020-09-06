@@ -65,7 +65,7 @@ export default {
   },
   mounted(){
     // console.log(store.getters.page)
-    axios.get('http://impetus.localhost/src/php/getAnnouncement.php')
+    axios.get('https://impetus-php.herokuapp.com/getAnnouncement.php')
 			.then((response)=>{
 
 				this.announcement = response.data[0]['text'];

@@ -87,7 +87,7 @@
     },
     mounted() {
 
-      axios.get('http://impetus.localhost/src/php/TeamDetail.php?name=' + this.$store.getters.teamID.teamName, {
+      axios.get('https://impetus-php.herokuapp.com/TeamDetail.php?name=' + this.$store.getters.teamID.teamName, {
           withCredentials: true
         })
         .then((response) => {
@@ -112,7 +112,7 @@
 
         this.form.team_id = this.team.team_id;
         this.form.teamname = this.team.teamname;
-        axios.post('http://impetus.localhost/src/php/joinRequest.php', {
+        axios.post('https://impetus-php.herokuapp.com/joinRequest.php', {
             newResq: this.form,
           })
           .then((response) => {

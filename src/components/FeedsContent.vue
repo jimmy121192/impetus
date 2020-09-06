@@ -56,7 +56,7 @@
 
     },
     mounted() {
-      axios.get('http://impetus.localhost/src/php/getPosts.php', {
+      axios.get('https://impetus-php.herokuapp.com/getPosts.php', {
           withCredentials: true
         })
         .then((response) => {

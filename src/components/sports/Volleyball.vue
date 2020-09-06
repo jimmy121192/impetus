@@ -75,7 +75,7 @@
 
     },
     mounted() {
-      axios.get('http://impetus.localhost/src/php/getPlayers.php?sport=Volleyball', {
+      axios.get('https://impetus-php.herokuapp.com/getPlayers.php?sport=Volleyball', {
           withCredentials: true
         })
         .then((response) => {

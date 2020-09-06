@@ -55,7 +55,7 @@
     },
 
     mounted() {
-      axios.get('http://impetus.localhost/src/php/newUsers.php', {
+      axios.get('https://impetus-php.herokuapp.com/newUsers.php', {
           withCredentials: true
         })
         .then((response) => {

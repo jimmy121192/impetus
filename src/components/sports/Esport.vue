@@ -66,7 +66,7 @@ export default {
 
     },
     mounted() {
-    axios.get('http://impetus.localhost/src/php/getPlayers.php?sport=Esport', {withCredentials: true})
+    axios.get('https://impetus-php.herokuapp.com/getPlayers.php?sport=Esport', {withCredentials: true})
         .then((response)=>{
             this.players = response.data;
 

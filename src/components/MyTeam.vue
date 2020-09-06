@@ -62,7 +62,7 @@
     mounted() {
       var item = JSON.parse(sessionStorage.getItem("userInfo"));
       this.hasTeam = item.teamname;
-      axios.get('http://impetus.localhost/src/php/TeamDetail.php?name=' + item.teamname, {
+      axios.get('https://impetus-php.herokuapp.com/TeamDetail.php?name=' + item.teamname, {
           withCredentials: true
         })
         .then((response) => {

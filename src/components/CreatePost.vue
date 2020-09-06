@@ -65,7 +65,7 @@
     methods: {
       onSubmit(evt) {
         evt.preventDefault();
-        axios.post('http://impetus.localhost/src/php/createPost.php', {
+        axios.post('https://impetus-php.herokuapp.com/createPost.php', {
           post: this.form,
         }).then((resp) => {
           this.modalShow = !this.modalShow

@@ -151,7 +151,7 @@
       this.form.userID = session.user_id
       this.form.email = session.email
 
-      axios.get('http://impetus.localhost/src/php/showEvents.php', {
+      axios.get('https://impetus-php.herokuapp.com/showEvents.php', {
           withCredentials: true
         })
         .then((response) => {
@@ -201,7 +201,7 @@
         this.modalShow = !this.modalShow
       },
       accept() {
-        axios.post('http://impetus.localhost/src/php/registerEvent.php', {
+        axios.post('https://impetus-php.herokuapp.com/registerEvent.php', {
           register: this.form,
         }).then((resp) => {
 

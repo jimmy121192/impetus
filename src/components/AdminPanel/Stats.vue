@@ -159,14 +159,14 @@
 
     methods: {
       delUser() {
-        axios.get('http://impetus.localhost/src/php/delUser.php?id=' + this.delUser_id, {
+        axios.get('https://impetus-php.herokuapp.com/delUser.php?id=' + this.delUser_id, {
           withCredentials: true
         }).then((response) => {
           this.modalShow = !this.modalShow
         })
       },
       delEvent() {
-        axios.get('http://impetus.localhost/src/php/delEvent.php?id=' + this.delEvent_id, {
+        axios.get('https://impetus-php.herokuapp.com/delEvent.php?id=' + this.delEvent_id, {
           withCredentials: true
         }).then((response) => {
           this.modalShow = !this.modalShow
@@ -176,7 +176,7 @@
 
         // console.log(this.announcement)
 
-        axios.post('http://impetus.localhost/src/php/newAnnouncement.php', {
+        axios.post('https://impetus-php.herokuapp.com/newAnnouncement.php', {
           body: this.announcement,
         }).then((resp) => {
           console.log(resp)
