@@ -153,7 +153,7 @@
 
         try {
         // fetch data from a url endpoint
-        var response = await axios.get("http://impetus.localhost/src/php/showEvents.php",{
+        var response = await axios.get("https://impetus-php.herokuapp.com/showEvents.php",{
           withCredentials: true
         });
 
@@ -176,7 +176,7 @@
         })
         }
         
-      // axios.get('http://impetus.localhost/src/php/showEvents.php', {
+      // axios.get('https://impetus-php.herokuapp.com/showEvents.php', {
       //     withCredentials: true
       //   })
       //   .then((response) => {
