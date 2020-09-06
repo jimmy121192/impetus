@@ -161,13 +161,14 @@
           this.annoucement = response.data[3][0]['text'];
           this.teamLeaderBoard = response.data[4];
 
-          console.log(response.data)
+          //console.log(response.data)
+          console.log(this.annoucement)
 
         })
         .then(() => {
           this.isRegistered.map((reg, index) => {
             this.registeredEvent(reg.event_id, reg.status)
-            // console.log(reg.event_id, reg.status)
+            console.log(reg.event_id, reg.status)
           })
         })
         .catch(function (error) {
