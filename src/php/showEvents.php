@@ -2,6 +2,7 @@
 //header("Access-Control-Allow-Origin: *");
 //header('Access-Control-Allow-Origin: http://localhost:8080');
 header('Access-Control-Allow-Origin: https://impetus.netlify.app');
+header('Content-Type: application/json');
 header('Access-Control-Allow-Methods: GET, POST');
 header("Access-Control-Allow-Headers: X-Requested-With, Content-Type");
 header("Access-Control-Allow-Credentials: true");
@@ -59,7 +60,8 @@ else{
     $array[] = $row4;
     $array[] = $row5;
 
-    echo json_encode($array);
+    echo json_encode($array,JSON_INVALID_UTF8_IGNORE);
+
 
 } 
 
