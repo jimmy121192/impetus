@@ -132,7 +132,7 @@
       }
     },
 
-    mounted() {
+    async mounted() {
       var today = new Date();
       var dd = today.getDate();
       var mm = today.getMonth() + 1;
@@ -147,37 +147,36 @@
       today = yyyy + '-' + mm + '-' + dd;
       this.date = today;
 
-      var session = JSON.parse(sessionStorage.getItem("userInfo"));
+      var session = await JSON.parse(sessionStorage.getItem("userInfo"));
       this.form.userID = session.user_id
       this.form.email = session.email
 
-      async function asyncFunc() {
         try {
         // fetch data from a url endpoint
-        const response = await axios.get("https://impetus-php.herokuapp.com/showEvents.php",{
+        var response = await axios.get("http://impetus.localhost/src/php/showEvents.php",{
           withCredentials: true
         });
-        const data = await response.json();
-        console.log(data);
-
-        this.items = data[0];
-        this.isRegistered = data[1];
-        this.leaderBoard = data[2];
-        this.annoucement = data[3][0]['text'];
-        this.teamLeaderBoard = data[4];
-
-        this.isRegistered.map((reg, index) => {
-            this.registeredEvent(reg.event_id, reg.status)
-            console.log(reg.event_id, reg.status)
-        })
 
         } catch(error) {
             console.log("error", error);
             // appropriately handle the error
           }
-      }
+      
 
-      // axios.get('https://impetus-php.herokuapp.com/showEvents.php', {
+        this.items = response.data[0];
+        this.isRegistered = response.data[1];
+        this.leaderBoard = response.data[2];
+        this.annoucement = response.data[3][0]['text'];
+        this.teamLeaderBoard = response.data[4];
+
+        if(this.isRegistered){
+          this.isRegistered.map((reg, index) => {
+            this.registeredEvent(reg.event_id, reg.status)
+            //console.log(reg.event_id, reg.status)
+        })
+        }
+        
+      // axios.get('http://impetus.localhost/src/php/showEvents.php', {
       //     withCredentials: true
       //   })
       //   .then((response) => {
@@ -187,14 +186,13 @@
       //     this.annoucement = response.data[3][0]['text'];
       //     this.teamLeaderBoard = response.data[4];
 
-      //     //console.log(response.data)
-      //     console.log(this.annoucement)
+      //     console.log(response.data)
 
       //   })
       //   .then(() => {
       //     this.isRegistered.map((reg, index) => {
       //       this.registeredEvent(reg.event_id, reg.status)
-      //       console.log(reg.event_id, reg.status)
+      //       // console.log(reg.event_id, reg.status)
       //     })
       //   })
       //   .catch(function (error) {
