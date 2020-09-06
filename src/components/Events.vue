@@ -154,13 +154,15 @@
           withCredentials: true
         })
         .then((response) => {
+          console.log(response)
+
           this.items = response.data[0];
           this.isRegistered = response.data[1];
           this.leaderBoard = response.data[2];
           this.annoucement = response.data[3][0]['text'];
           this.teamLeaderBoard = response.data[4];
 
-          console.log(response)
+         
 
         })
         .then(() => {
