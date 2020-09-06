@@ -151,29 +151,50 @@
       this.form.userID = session.user_id
       this.form.email = session.email
 
-      axios.get('https://impetus-php.herokuapp.com/showEvents.php', {
+      async function asyncFunc() {
+        try {
+        // fetch data from a url endpoint
+        const response = await axios.get("/https://impetus-php.herokuapp.com/showEvents.php",{
           withCredentials: true
-        })
-        .then((response) => {
-          this.items = response.data[0];
-          this.isRegistered = response.data[1];
-          this.leaderBoard = response.data[2];
-          this.annoucement = response.data[3][0]['text'];
-          this.teamLeaderBoard = response.data[4];
-
-          //console.log(response.data)
-          console.log(this.annoucement)
-
-        })
-        .then(() => {
-          this.isRegistered.map((reg, index) => {
-            this.registeredEvent(reg.event_id, reg.status)
-            console.log(reg.event_id, reg.status)
-          })
-        })
-        .catch(function (error) {
-          console.log(error)
         });
+        const data = await response.json();
+        console.log(data);
+
+        this.items = data[0];
+        this.isRegistered = data[1];
+        this.leaderBoard = data[2];
+        this.annoucement = data[3][0]['text'];
+        this.teamLeaderBoard = data[4];
+
+        } catch(error) {
+            console.log("error", error);
+            // appropriately handle the error
+          }
+      }
+
+      // axios.get('https://impetus-php.herokuapp.com/showEvents.php', {
+      //     withCredentials: true
+      //   })
+      //   .then((response) => {
+      //     this.items = response.data[0];
+      //     this.isRegistered = response.data[1];
+      //     this.leaderBoard = response.data[2];
+      //     this.annoucement = response.data[3][0]['text'];
+      //     this.teamLeaderBoard = response.data[4];
+
+      //     //console.log(response.data)
+      //     console.log(this.annoucement)
+
+      //   })
+      //   .then(() => {
+      //     this.isRegistered.map((reg, index) => {
+      //       this.registeredEvent(reg.event_id, reg.status)
+      //       console.log(reg.event_id, reg.status)
+      //     })
+      //   })
+      //   .catch(function (error) {
+      //     console.log(error)
+      //   });
     },
 
     methods: {
