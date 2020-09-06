@@ -8,17 +8,13 @@ header("Access-Control-Allow-Headers: X-Requested-With, Content-Type");
 header("Access-Control-Allow-Credentials: true");
 
 
-$data = json_decode(file_get_contents("php://input"),true);
-
-
-
   session_start();  
 
   $email = $_SESSION["user_email"];
   $user_id = $_SESSION["user_id"];
 
-  // $email = 'hoangbao1992@gmail.com';
-
+  //$email = 'hoangbao1992@gmail.com';
+  //$user_id = 1;
 
 $servername = "localhost"; $username = "jimmy"; $password = "121192";
 
