@@ -151,7 +151,7 @@
       this.form.userID = session.user_id
       this.form.email = session.email
 
-      axios.get('https://impetus-php.herokuapp.com/test.php', {
+      axios.get('https://impetus-php.herokuapp.com/showEvents.php', {
           withCredentials: true
         })
         .then((response) => {
