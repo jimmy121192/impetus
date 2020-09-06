@@ -154,7 +154,7 @@
       async function asyncFunc() {
         try {
         // fetch data from a url endpoint
-        const response = await axios.get("/https://impetus-php.herokuapp.com/showEvents.php",{
+        const response = await axios.get("https://impetus-php.herokuapp.com/showEvents.php",{
           withCredentials: true
         });
         const data = await response.json();
