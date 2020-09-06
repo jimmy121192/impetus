@@ -94,7 +94,7 @@
     data() {
       return {
         room: '',
-        socket: io("https://previews-bcit.herokuapp.com//chat"),
+        socket: io("https://impetus-socket.herokuapp.com/chat"),
         //socket: io("http://localhost:8880/chat"),
         msg: "",
         username: '',
