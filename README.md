@@ -1,5 +1,12 @@
 # impetus
 
+<p align="center">
+  <a href="https://www.jimmytruong.ca">
+    <img alt="Jimmy" src="https://alonedreamer.com/jimmymedia/images/dark-logo.png" width="60" />
+  </a>
+</p>
+
+
 ## Project setup
 ```
 npm install
@@ -15,15 +22,5 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Deploy
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0a394a3a-aa93-4bdb-98b9-ca2d84b100f1/deploy-status)](https://app.netlify.com/sites/impetus/deploys)
